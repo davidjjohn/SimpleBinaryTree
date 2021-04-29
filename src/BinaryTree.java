@@ -7,6 +7,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
+// sorted list i need compareTo() in the class E
 public class BinaryTree<E extends Comparable> {
 
     private BinaryNode<E> root;
@@ -28,6 +29,16 @@ public class BinaryTree<E extends Comparable> {
 
         // insert item as a node using the order relation
         root.insert(item);
+    }
+
+    // find item in binary tree
+    public E find(E item){
+        if (root == null){
+            return null;
+        }
+
+        return root.find(item);
+
     }
 
     // print tree in inorder

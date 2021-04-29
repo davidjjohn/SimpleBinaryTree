@@ -4,7 +4,7 @@
 // David John
 // November, 2020
 
-import java.util.concurrent.ThreadLocalRandom;
+
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         // create empty myTree
-        BinaryTree<Integer> myTree = new BinaryTree<Integer>();
+        BinaryTree<String> myTree = new BinaryTree<String>();
         Scanner keyboard = new Scanner(System.in);
 
         // create a number of random integers and insert them into myTree
@@ -20,7 +20,7 @@ public class Main {
 
             // generate random number in range [-15, 50] in Java
             System.out.print("Enter item #"+i+": ");
-            int randValue = keyboard.nextInt();
+            String randValue = keyboard.next();
 
             // insert each into myTree
             myTree.insert(randValue);
@@ -29,7 +29,7 @@ public class Main {
         //System.out.println(myTree);
         System.out.print("The nodes of tree are (inorder): ");
         System.out.println(myTree.inorder());
-        System.out.print("The breadth order of the tree is: ");
-        System.out.println(myTree);
+        // System.out.print("The breadth order of the tree is: ");
+        // System.out.println(myTree);
     }
 }
