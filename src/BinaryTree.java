@@ -33,10 +33,13 @@ public class BinaryTree<E extends Comparable> {
 
     // find item in binary tree
     public E find(E item){
+
+        // if tree is empty, item not found
         if (root == null){
             return null;
         }
 
+        // find the "item" by starting at the root
         return root.find(item);
 
     }
@@ -44,11 +47,13 @@ public class BinaryTree<E extends Comparable> {
     // print tree in inorder
     public String inorder(){
         String Result = "";
+
+        // if tree is empty, done
         if (root == null){
             return Result;
         }
 
-        // call recursive BinaryNode inorder()
+        // call recursive BinaryNode inorder() starting with the root
         return root.inorder();
     }
 
