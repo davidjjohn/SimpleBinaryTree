@@ -1,5 +1,9 @@
 // Simple BinaryNode using a generic that
 // extends Comparable (.compareTo())
+//
+// David John
+// November 2020
+// April 2021
 
 public class BinaryNode<E extends Comparable> {
 

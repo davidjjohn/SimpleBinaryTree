@@ -3,6 +3,7 @@
 //
 //  David John
 //  November 2020
+//  April 2021
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -10,7 +11,7 @@ import java.util.Queue;
 // sorted list i need compareTo() in the class E
 public class BinaryTree<E extends Comparable> {
 
-    private BinaryNode<E> root;
+    private BinaryNode<E> root;   // root of tree
 
     // default constructor
     public BinaryTree(){
